@@ -1,0 +1,956 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Moon+Dance&family=Playwrite+IT+Moderna:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.car-caption {
+    left: 20%;
+    right: auto;
+    text-align: left;
+    bottom: 50%;
+    transform: translateY(60%);
+}
+
+.car-caption h1,
+.car-caption h5,
+.car-caption p {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.buton {
+    border-radius: 0;
+}
+
+.buton:hover {
+    background-color: #ff4d6d;
+    border-color: #ff4d6d;
+    color: #ffff;
+}
+
+.container img {
+    object-fit: cover;
+}
+
+.section-1 {
+    background-image: url(img/clear-03-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform 5s ease-in-out;
+    animation: zoomInOut 5s infinite alternate ease-in-out;
+}
+
+.cprev,
+.cnext {
+    width: 2%;
+    filter: invert(1);
+}
+
+.section4 {
+    background-image: url(img/clear01-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.zoom-image {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.zoom-image img {
+    transition: transform 2s ease-in-out;
+}
+
+.zoom-image:hover img {
+    transform: scale(1.5);
+}
+
+.description {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.moreinfo {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 0;
+    color: #1a1336;
+    background-color: #DFBEC3;
+}
+
+.moreinfo:hover {
+    color: #DFBEC3;
+    background-color: #120F4D;
+}
+
+.deal-section {
+    position: relative;
+    background: url('img/countdow-v1.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.deal-section button {
+    margin-top: 40px;
+    border-radius: 0;
+    background: #ffffff;
+    padding: 10px 30px !important;
+    transition: transform 5s ease-in-out;
+    animation: zoomInOut 5s infinite alternate ease-in-out;
+}
+
+.deal-section button:hover {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.timer-card {
+    background: transparent;
+    border: 1px dashed #ffffff;
+    border-radius: 0;
+    width: 100px;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.section-5 {
+    background-image: url(img/clear03-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.section-5 p {
+    color: #7a697a;
+}
+
+.section-5 h2,
+h5 {
+    color: #1a1336;
+}
+
+.service-box img {
+    max-width: 80px;
+}
+
+.why-choose {
+    background-image: url(img/clear-01-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.team-section {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.team-section button,
+.visit-section button {
+    border-radius: 0;
+    padding: 10px 30px;
+    background: #DFBEC3;
+    color: #1a1336;
+}
+
+.team-section button:hover,
+.visit-section button:hover {
+    color: #DFBEC3;
+    background: #1a1336;
+}
+
+.blog-section {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.blog-section button {
+    border-radius: 0;
+    padding: 5px 20px;
+    background: #DFBEC3;
+    color: #1a1336;
+}
+
+.blog-section button:hover {
+    color: #DFBEC3;
+    background: #1a1336;
+}
+
+.visit-section {
+    margin: 5rem 0;
+    background: url('img/h1-img-5.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.visit-content {
+    background-color: rgba(253, 246, 242, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.footer .logoc {
+    height: 70px;
+}
+
+.footer {
+    background-color: #1a1336;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.gold-hr {
+    width: 70%;
+    border-color: #DFBEC3;
+    opacity: 0.5;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.so-me-ic {
+    margin-bottom: -40px;
+}
+
+.icon-box i {
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.instagram {
+    color: #DA70D6;
+}
+
+.youtube {
+    color: #FF0000;
+}
+
+.linkedin {
+    color: #0077B5;
+}
+
+/* -------------ABOUTUS-------------*/
+.next-sec-head {
+    /* border-bottom: 0.25px solid lightcyan; */
+    background: rgba(255, 255, 255, 0.6);
+    /* White with 60% transparency */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+}
+
+.about-section {
+    background: url('img/parallax-01.jpg') center/cover no-repeat;
+    height: 50vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Light overlay for readability */
+}
+
+.who-we-are {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.ver-1 {
+    margin-top: 60px;
+    height: 45vh;
+    width: auto;
+    border-radius: 0;
+}
+
+.ver-2 {
+    height: 55vh;
+    width: auto;
+    border-radius: 0;
+}
+
+.ver-1:hover,
+.ver-2:hover {
+    animation: headshake 1.5s ease-in-out infinite;
+}
+
+.progress-bar {
+    background-color: #DFBEC3 !important;
+}
+
+.btn-custom {
+    background-color: #DFBEC3;
+    color: #1a1336;
+    border: none;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.btn-custom:hover {
+    background-color: #1a1336;
+    color: #DFBEC3;
+}
+
+.reservation {
+    margin: 5rem 0;
+    background: url('img/h1-img-4.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.reservation-section {
+    background: #fff;
+    color: #555;
+    padding: 40px;
+    height: 40vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-reserve {
+    background-color: #DFBEC3;
+    border: none;
+    border-radius: 0;
+    color: #1a1336;
+}
+
+.btn-reserve:hover {
+    color: #DFBEC3;
+    background-color: #1a1336;
+}
+
+select,
+input,
+option {
+    border: 1px solid #DFBEC3 !important;
+    border-radius: 0 !important;
+}
+
+.Team-Member {
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.team-img img {
+    filter: brightness(85%);
+    height: 50vh;
+    width: auto;
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-img img:hover {
+    transform: scale(1.1);
+}
+
+.experience-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/parallax-03.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.experience-section .card {
+    background: white;
+    height: 35vh;
+    border-radius: 0 !important;
+}
+
+.experience-section .card h2 {
+    margin: 20px;
+    font-size: 50px;
+    color: #1a1336;
+}
+
+.experience-section .btn-primary {
+    background-color: #DFBEC3;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.experience-section .btn-primary:hover {
+    background-color: #e58c8c;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card .card {
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(360deg);
+}
+
+
+.latest-posts {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    color: #1a1336;
+}
+
+.latest-posts .card img {
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.latest-posts .card img:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+.badge {
+    background-color: #DFBEC3;
+    color: #1a1336;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+.bottom-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/parallax-02-1.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    height: 60vh;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.bottom-section h2 {
+    font-size: 50px;
+}
+
+.bottom-section p {
+    font-size: 14px;
+}
+
+.bottom-section button {
+    color: #1a1336;
+    background-color: #DFBEC3;
+    border: none;
+    border-radius: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.bottom-section button:hover {
+    background-color: #1a1336;
+    color: #DFBEC3;
+}
+
+.foot-2 a {
+    text-decoration: none;
+}
+
+.foot-2-icn {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+/* ======================= SHOP ======================= */
+
+.shop-section {
+    background: url('img/parallax-06.jpg') center/cover no-repeat;
+    height: 60vh;
+    position: relative;
+}
+
+.shop-reservation {
+    margin: 5rem 0;
+    background: url('img/h1-img-1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.new-arvl {
+    background: url('img/p3-background-img-1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.new-arvl .card {
+    height: 50vh;
+    width: 80%;
+}
+
+.three-d-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #FFFAFA;
+    overflow: hidden;
+}
+
+.three-d-product .box {
+    margin: 30px 0;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+}
+
+.three-d-product .box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    -webkit-box-reflect: below 0px linear-gardient(transparent, transparent, #0004);
+}
+
+.three-d-product .box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hovr-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background: #ffffff;
+    padding: 16px 0;
+    bottom: -16px;
+}
+
+.img-rapper:hover .hovr-text,
+.img-rapper:focus .hovr-text,
+.img-rapper:active .hovr-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.img-rapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+/* ==============BLOG=============== */
+.blog-hero-dection {
+    background: url('img/parallax-05.jpg') center/cover no-repeat;
+    height: 60vh;
+    position: relative;
+}
+
+.main-blog-page {
+    h3 {
+        color: #120F4D;
+    }
+
+    .text-muted {
+        font-size: 14px;
+    }
+
+    img {
+        object-fit: cover;
+    }
+}
+
+/* ---------------SERVICES----------------- */
+.blog-hero-section {
+    background: url('img/parallax-03.jpg') center/cover no-repeat;
+    height: 50vh;
+    position: relative;
+
+}
+
+.service-experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/parallax-05.jpg') no-repeat center center/cover;
+}
+
+/* -------------------- CONTACT ------------------- */
+
+.contact-hero-section {
+    background: url('img/parallax-02-1.jpg') center/cover no-repeat;
+    height: 50vh;
+    position: relative;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.touch-section {
+    background: url('img/clear03-1.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.touch-section .card {
+    height: 30vh;
+}
+
+.contact-main-icon {
+    color: #DFBEC3;
+}
+
+.contact-main-link {
+    color: #DFBEC3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-form-section {
+    background: url('img/clear01-1.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Quicksand', serif;
+    color: #1a1336;
+}
+
+.contact-main-form input,
+.contact-main-form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #DFBEC3;
+}
+
+.contact-main-form input::placeholder,
+.contact-main-form textarea::placeholder {
+    color: #DFBEC3;
+}
+
+.contact-btn {
+    background-color: #DFBEC3;
+    color: #1a1336;
+    border-radius: 0;
+}
+
+.faq-section {
+    font-family: 'Quicksand', serif;
+    color: #1a1336;
+}
+
+.faq-title {
+    letter-spacing: 2px;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #DFBEC3;
+    ;
+    background-color: transparent;
+}
+
+.contact-btn {
+    background-color: #DFBEC3;
+    ;
+    color: #2E2C4B;
+}
+
+.stats-box {
+    background-color: #F9F7F5;
+}
+
+.stats-box.dark {
+    background-color: #2E2C4B;
+    color: white;
+}
+
+/* ----------------------------------------media query--------------------------------------------------- */
+@media (max-width: 1024px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        border-bottom: 0.02px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 5px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .navbar-toggler {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    .carousel-item {
+        height: 65vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .car-caption {
+        font-size: 14px;
+        text-align: center;
+        left: 5%;
+        right: 5%;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    .car-caption h1 {
+        font-size: 26px;
+    }
+
+    .car-caption p {
+        font-size: 14px;
+    }
+
+    .cakeslidernew h5,
+    p {
+        font-size: 12px;
+    }
+
+    .buton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .section4 {
+        margin: 0 10px;
+    }
+
+    .why-desc ul li {
+        font-size: 12px;
+    }
+
+    .bottom-section h2 {
+        font-size: 25px;
+    }
+
+    .three-d-product .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .three-d-product .box span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+    }
+}
+
+@media (min-width: 992px) {
+    .hover-text {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        background: #ffffff;
+        padding: 16px 0;
+        bottom: -16px;
+    }
+
+    .img-wrapper:hover .hover-text {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .whyc-img {
+        margin-top: 35px;
+        margin-left: 8rem;
+        border-radius: 40px;
+        width: 60%;
+        height: auto;
+        transition: transform 5s ease-in-out;
+        animation: zoomInOut 5s infinite alternate ease-in-out;
+    }
+
+    .why-desc {
+        margin-left: -3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .three-d-product .box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .three-d-product .box span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px);
+    }
+
+    /* .touch-section .card{
+        height: 30vh;
+    } */
+}
+
+/* ================ANIMATION=========== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes headshake {
+    0% {
+        transform: translateX(0);
+    }
+
+    6.5% {
+        transform: translateX(-6px) rotateY(-9deg);
+    }
+
+    18.5% {
+        transform: translateX(5px) rotateY(7deg);
+    }
+
+    31.5% {
+        transform: translateX(-3px) rotateY(-5deg);
+    }
+
+    43.5% {
+        transform: translateX(2px) rotateY(3deg);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

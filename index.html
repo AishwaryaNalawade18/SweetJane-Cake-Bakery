@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetJane Cake & Bakery </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/h2-1-logo-img-2.png" alt="Brand Logo" height="50">
+                </a>
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNav" style="border-radius: 0;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center flex-grow-1">
+                        <a href="#" class="text-white mx-2"><i class="bi bi-search"></i></a>
+                        <a href="#" class="text-white mx-2" data-bs-toggle="modal" data-bs-target="#newsletterModal"><i
+                                class="bi bi-cart"></i></a>
+                        <a href="#" class="text-white mx-2 d-none d-md-inline"><i class="bi bi-person"></i></a>
+                        <a href="#" class="text-white mx-2 d-none d-md-inline"><i class="bi bi-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="mobileNav">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="border-radius: 0;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Hero Section with Image Slider -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slideshow-v3-1.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption text-start animate-text car-caption">
+                        <h5 style="color: #ffffff;">Style Destination</h5>
+                        <h1>Delicious Cakes</h1>
+                        <p>Enjoy the finest flavors crafted just for you.</p>
+                        <a href="shop.html" class="btn btn-outline-light buton">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slideshow-v1.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption text-start animate-text car-caption">
+                        <h5 style="color: #ffffff;">Exclusive Treats</h5>
+                        <h1>Freshly Baked</h1>
+                        <p>Indulge in our mouth-watering delights.</p>
+                        <a href="shop.html" class="btn btn-outline-light buton">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slideshow-v3-2.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption text-start animate-text car-caption">
+                        <h5 style="color: #ffffff;">Sweet Indulgence</h5>
+                        <h1>Handcrafted Perfection</h1>
+                        <p>Made with love and the finest ingredients.</p>
+                        <a href="shop.html" class="btn btn-outline-light buton">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slideshow-v2.jpg" class="d-block w-100" alt="Slide 4">
+                    <div class="carousel-caption text-start animate-text car-caption">
+                        <h5 style="color: #ffffff;">Taste the Difference</h5>
+                        <h1>Decadent Delights</h1>
+                        <p>Experience the magic in every bite.</p>
+                        <a href="shop.html" class="btn btn-outline-light buton">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- modal -->
+        <div class="modal fade " id="newsletterModal" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modc" style="border-radius: 0;">
+                    <div class="modal-body d-flex p-0 modb">
+                        <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                        <div class="p-4 w-100">
+                            <h4 class="fw-bold">Join Our Mailing List</h4>
+                            <p class="text-muted">Pellentesque de fermentum mollis comoduos an loremous</p>
+                            <div class="input-group mb-3 inpgrp">
+                                <input type="email" class="form-control" placeholder="Email">
+                                <button class="btn btn-dark">SIGN IN</button>
+                            </div>
+                            <p class="small text-uppercase fw-bold pclass">SIGN UP FOR EXCLUSIVE UPDATES, NEW ARRIVALS
+                                AND
+                                INSIDER-ONLY DISCOUNTS</p>
+                            <div class="d-flex gap-3 social">
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-dribbble"></i>
+                                <i class="bi bi-behance"></i>
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="w-50 d-none d-md-block">
+                            <img src="img/popup-newletter.jpg" class="img-fluid h-100" alt="Newsletter Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section-1 -->
+        <div class="section-1">
+            <div class="container py-4">
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="img-wrapper">
+                                    <img src="img/banner-v3-3.jpg" class="img-fluid w-100">
+                                    <p class="hover-text d-lg-block d-none">Delicious Cake</p>
+                                </div>
+                                <p class="text-center fw-bold mt-2 d-lg-none">Delicious Cake</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img-wrapper">
+                                    <img src="img/banner-v3-1.jpg" class="img-fluid w-100">
+                                    <p class="hover-text d-lg-block d-none">100% Chocolate</p>
+                                </div>
+                                <p class="text-center fw-bold mt-2 d-lg-none">100% Chocolate</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img-wrapper">
+                                    <img src="img/banner-v3-4.jpg" class="img-fluid w-100">
+                                    <p class="hover-text d-lg-block d-none">Creamy Chocolate</p>
+                                </div>
+                                <p class="text-center fw-bold mt-2 d-lg-none">Creamy Chocolate</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img-wrapper">
+                                    <img src="img/banner-v3-2.jpg" class="img-fluid w-100">
+                                    <p class="hover-text d-lg-block d-none">Carrot Cake</p>
+                                </div>
+                                <p class="text-center fw-bold mt-2 d-lg-none">Carrot Cake</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="img-wrapper">
+                            <img src="img/banner-v3-5.jpg" class="img-fluid w-100">
+                            <p class="hover-text d-lg-block d-none">Tasty Black Forest</p>
+                        </div>
+                        <p class="text-center fw-bold mt-2 d-lg-none">Tasty Black Forest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- new-Arrival -->
+        <div class="container-fluid my-5">
+            <h2 class="text-center mb-4 display-5">New Arrivals</h2>
+            <div id="cakeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active cakeslidernew">
+                        <div class="row">
+                            <div class=" col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--1.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Premium Chocolate Truffle Cake</h5>
+                                        <p class="text-danger fw-bold">$25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--2.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Biscuit Cake</h5>
+                                        <p class="text-danger fw-bold">$18.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--3.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Baked Lemon Cheesecake</h5>
+                                        <p class="text-danger fw-bold">$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item cakeslidernew">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--4.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chocolate Raspberry Drip Cake</h5>
+                                        <p class="text-danger fw-bold">$22.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--5.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Black Forest Cake</h5>
+                                        <p class="text-danger fw-bold">$19.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--6.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Flourless Orange Cake</h5>
+                                        <p class="text-danger fw-bold">$17.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item cakeslidernew">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--7.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Carrot Caramel Cake</h5>
+                                        <p class="text-danger fw-bold">$21.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--8.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chocolate Mousse Cupcake</h5>
+                                        <p class="text-danger fw-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--9.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Rose Chocolate Cupcake</h5>
+                                        <p class="text-danger fw-bold">$16.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item cakeslidernew">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--10.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Lemon Vanilla Cupcake</h5>
+                                        <p class="text-danger fw-bold">$14.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--11.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Valentine's Cupcake</h5>
+                                        <p class="text-danger fw-bold">$18.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--12.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Vanilla Cupcake</h5>
+                                        <p class="text-danger fw-bold">$12.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item cakeslidernew">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--13.jpg" class="card-img-top" style="border-radius: 0;">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chocolate and Vanilla Swirl Cookie</h5>
+                                        <p class="text-danger fw-bold">$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--14.jpg" class="card-img-top border-0">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chocolate-Dipped Strawberries</h5>
+                                        <p class="text-danger fw-bold">$14.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="card border-0">
+                                    <img src="img/cake--15.jpg" class="card-img-top border-0">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Belgian Waffle</h5>
+                                        <p class="text-danger fw-bold">$11.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev cprev" type="button" data-bs-target="#cakeCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next cnext" type="button" data-bs-target="#cakeCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- section-4 -->
+        <div class="section4">
+            <div class="container py-6">
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <div class="col-12">
+                            <p class="subheading" style="color: #555;">CRAFTING EXPERIENCES THAT CONVERT</p>
+                            <h1 class="title display-5" style="color:#0B0448;">Service Strategy</h1>
+                        </div>
+                        <div class="col-12 zoom-image">
+                            <img src="img/focus-01-600x400.jpg" class="img-fluid w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-12 zoom-image">
+                            <img src="img/focus-05-600x400 (1).jpg" class="img-fluid w-100 h-100">
+                        </div>
+                        <div class="col-12">
+                            <p class="description" style="color: #555;">In a competitive business landscape, reaching
+                                and
+                                engaging your target audience is vital for success.
+                                Cornerstone for businesses seeking to maximize their online presence and drive growth.
+                                Maximize their online presence and drive growth.</p>
+                            <button class="btn btn-outline-light moreinfo">MORE INFO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section-timer -->
+        <div class="container-fluid mt-5 deal-section">
+            <div class="deal-overlay">
+                <div class="row text-center justify-content-center deal-content">
+                    <p class="deal-subtitle" style="color: #ffffff;">Nature Deal of the Day</p>
+                    <h2 class="deal-title" style="color: #ffffff;">Deal of the Day</h2>
+
+                    <div class="col-12">
+                        <div class="row justify-content-center d-flex flex-wrap g-3 mt-3 timer">
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Sec</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-shop px-4 py-2">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section-5 -->
+        <section class="section-5">
+            <div class="container py-5">
+                <p class="text-center text-uppercase" style="letter-spacing: 2px;">All Services</p>
+                <h2 class="text-center mb-4 section-title">Check Craft Solutions</h2>
+                <p class="text-center mb-4 section-subtitle">Explore our comprehensive range of exceptional services and
+                    unwavering commitment to excellence</p>
+
+                <div class="row text-center mt-5">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-02 (1).png">
+                            <h5>Customer Assistance</h5>
+                            <p>Dedicated support for all your need</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-05 (1).png">
+                            <h5>Strategic Consulting</h5>
+                            <p>Expert guidance to achieve goals</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-06 (1).png">
+                            <h5>Innovative Solutions</h5>
+                            <p>Creative problem-solving</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-03 (1).png">
+                            <h5>Quality Assurance</h5>
+                            <p>Rigorous checks and balances</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-01 (1).png">
+                            <h5>Marketing Strategies</h5>
+                            <p>Result-oriented campaigns</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="service-box">
+                            <img src="img/service-04 (1).png">
+                            <h5>Financial Planning</h5>
+                            <p>Expert financial guidance tailored</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why choose us -->
+        <div class="why-choose">
+            <div class="container p-5">
+                <div class="d-flex justify-content-center gap-3 mb-5 nav nav-tabs" id="myTab" role="tablist">
+                    <button class="btn btn-custom active" id="whyChoose-tab" data-bs-toggle="tab"
+                        data-bs-target="#whyChoose" type="button" role="tab"
+                        style="background: transparent; color: #0B0448; border-radius: 0;">Why Choose us?</button>
+                    <button class="btn btn-custom" id="ourPhilosophy-tab" data-bs-toggle="tab"
+                        data-bs-target="#ourPhilosophy" type="button" role="tab"
+                        style="background:#0B0448; color: #DFBEC3; border-radius: 0;">Our Philosophy</button>
+                    <button class="btn btn-custom" id="qualityIngredients-tab" data-bs-toggle="tab"
+                        data-bs-target="#qualityIngredients" type="button" role="tab"
+                        style="background: #DFBEC3; color:#0B0448; border-radius: 0;">Quality Ingredients</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="whyChoose" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/why-choos-us.jpg" class="img-fluid whyc-img">
+                            </div>
+                            <div class="col-md-6 why-desc">
+                                <h2>Why Choose us?</h2>
+                                <p>There is no difficulty in making a decision. If you are looking for quality and
+                                    reliability,
+                                    we are the right choice for you.<br>We ensure excellence in everything we do. From
+                                    start
+                                    to
+                                    finish, our services are designed to meet your needs with professionalism and
+                                    dedication.
+                                </p>
+                                <ul>
+                                    <li><strong>Seamless Experience</strong>: We focus on providing a smooth and
+                                        hassle-free
+                                        experience.</li>
+                                    <li><strong>Customer Satisfaction</strong>: Your satisfaction is our top priority.
+                                    </li>
+                                    <li><strong>Trusted by Many</strong>: Our clients trust us for our commitment to
+                                        quality
+                                        and
+                                        efficiency.</li>
+                                </ul>
+                                <p>Choose us for a service that exceeds expectations!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="ourPhilosophy" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 why-desc">
+                                <h2>Our Philosophy</h2>
+                                <p>We believe in a strong foundation of reliability, quality, and innovation. Our
+                                    approach
+                                    is
+                                    centered on continuous improvement and delivering excellence in every aspect.</p>
+                                <ul>
+                                    <li><strong>Commitment to Excellence</strong> – We strive to provide the best
+                                        services
+                                        with
+                                        precision and dedication.</li>
+                                    <li><strong>Customer-Centric Approach</strong> – Your needs are our priority, and we
+                                        aim
+                                        to
+                                        exceed expectations.</li>
+                                    <li><strong>Innovation & Growth</strong> – We embrace change and innovation to stay
+                                        ahead in
+                                        an evolving world.</li>
+                                </ul>
+                                <p>With a passion for excellence and a focus on your success, we ensure that every step
+                                    we
+                                    take
+                                    leads to a better future.</p>
+                            </div>
+                            <div class="col-md-6 ">
+                                <img src="img/whychooseus.jpg" class="img-fluid whyc-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="qualityIngredients" role="tabpanel" ">
+                    <div class=" row">
+                        <div class="col-md-6">
+                            <img src="img/slide-04.jpg" class="img-fluid whyc-img">
+                        </div>
+                        <div class="col-md-6 why-desc">
+                            <h2>Quality Ingredients</h2>
+                            <p>We stand as a beacon of reliability and excellence, embracing growth while staying true
+                                to
+                                our values. Driven by dedication and passion, we deliver quality solutions with
+                                precision
+                                and commitment.
+                                <br>Our process is designed for impact, fostering trust through consistency and
+                                innovation.
+                                We believe in collaboration, creating opportunities, and inspiring progress. With
+                                integrity
+                                at our core, we remain committed to making a difference, embracing change, and
+                                delivering
+                                solutions that stand the test of time.
+                                <br>Join us on this journey where innovation meets purpose, and excellence is a way of
+                                life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- our-team -->
+        <section class="team-section text-center py-5">
+            <div class="container">
+                <h2 class="mb-4 display-5">Sweet Team</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-0">
+                            <div class="card-img-top position-relative">
+                                <img src="img/h1-team-img-1-2-218x300.jpg" class="img-fluid ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nick Yorke</h5>
+                                <p class="text-muted">MANAGER</p>
+                                <div>
+                                    <i class="bi bi-instagram me-2 instagram"></i>
+                                    <i class="bi bi-linkedin me-2 linkedin"></i>
+                                    <i class="bi bi-twitter twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0">
+                            <div class="card-img-top position-relative">
+                                <img src="img/h1-team-img-2-2-218x300.jpg" class="img-fluid ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Madelein Dylan</h5>
+                                <p class="text-muted">CHEF</p>
+                                <div>
+                                    <i class="bi bi-instagram me-2 instagram"></i>
+                                    <i class="bi bi-linkedin me-2 linkedin"></i>
+                                    <i class="bi bi-twitter twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0">
+                            <div class="card-img-top position-relative">
+                                <img src="img/h1-team-img-3-2-218x300.jpg" class="img-fluid ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dietro Laschi</h5>
+                                <p class="text-muted">CHEF</p>
+                                <div>
+                                    <i class="bi bi-instagram me-2 instagram"></i>
+                                    <i class="bi bi-linkedin me-2 linkedin"></i>
+                                    <i class="bi bi-twitter twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0">
+                            <div class="card-img-top position-relative">
+                                <img src="img/h1-team-img-4-2-218x300.jpg" class="img-fluid ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Eni Silva</h5>
+                                <p class="text-muted">DECORATER</p>
+                                <div>
+                                    <i class="bi bi-instagram me-2 instagram"></i>
+                                    <i class="bi bi-linkedin me-2 linkedin"></i>
+                                    <i class="bi bi-twitter twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn mt-4">JOIN US</button>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="container text-center my-5 blog-section">
+            <h2 class="fw-light display-5">Sweet Jane’s Cookbook</h2>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="img/blog-1-img-1-300x240.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="text-uppercase small text-muted">Decor</p>
+                            <h5 class="card-title">Cherry Berry Buttermilk Cake</h5>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet, at sed odio eloquentiam. Natum
+                                invenire vim an, tota etiam accusam te nec, mundi </p>
+                            <button class="btn mt-4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="img/blog-1-img-2-300x240.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="text-uppercase small text-muted">Decor</p>
+                            <h5 class="card-title">Coconut Tres Leches Cupcakes</h5>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet, at sed odio eloquentiam. Natum
+                                invenire vim an, tota etiam accusam te nec, mundi </p>
+                            <button class="btn mt-4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <img src="img/blog-1-img-3-300x240.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="text-uppercase small text-muted">Decor</p>
+                            <h5 class="card-title">Lemon Cupcake With Caramel Glaze</h5>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet, at sed odio eloquentiam. Natum
+                                invenire vim an, tota etiam accusam te nec, mundi </p>
+                            <button class="btn mt-4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- visit-section -->
+        <section class="visit-section container-fluid">
+            <div class="container d-flex justify-content-end">
+                <div class="col-md-5 visit-content">
+                    <h2 class="fs-1 fw-normal text-secondary">Visit Us At <br> Montmartre</h2>
+                    <p class="text-muted">Right in the heart of Paris. Lorem bibendum auctor, nit consequaa nibh vel
+                        velit auctor lorem qui biben ctor alique.</p>
+                    <button class="btn px-4 py-2 ">FIND US ON MAP</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/h2-1-logo-img-2.png" class="mb-3 logoc" height="50">
+                    <hr class="gold-hr ms-5">
+                    <p class="text-secondary">Eight Avenue 487, New York</p>
+                    <p class="text-secondary">+387643932728</p>
+                    <p><a href="mailto:sweettooth@example.com" class="text-secondary">sweetjane@example.com</a></p>
+                    <p class="text-secondary">2025 Qode Interactive, All Rights Reserved</p>
+                </div>
+
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="footer-divider"></div>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="img/footer-image-2.png" class="mb-3 logoc" height="50">
+                    <h5 class="fw-light">About Us</h5>
+                    <hr class="gold-hr mt-0 ms-5">
+                    <p class="text-secondary"> Sed ac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet
+                        pulvinar ante tempor tincidunt.</p>
+                    <p class="text-secondary">Etiam lacus eros, viverra non massa tempus, commodo fringilla nulla.
+                        Quisque vehicula.</p>
+                </div>
+
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="footer-divider"></div>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="img/footer-img-2 (1).png" alt="World Map" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 p-2 so-me-ic">
+            <hr class="gold-hr mx-auto">
+            <div class="col-12 d-flex justify-content-center gap-1 gap-md-3">
+                <a href="#" class="icon-box facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="icon-box instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="icon-box twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="icon-box youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="icon-box linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

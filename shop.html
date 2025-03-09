@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetJane Cake & Bakery </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark next-sec-head">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/h2-1-logo-img-2.png" alt="Brand Logo" height="50">
+                </a>
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNav" style="border-radius: 0;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center flex-grow-1">
+                        <a href="#" class="text-white mx-2"><i class="bi bi-search"></i></a>
+                        <a href="#" class="text-white mx-2" data-bs-toggle="modal" data-bs-target="#newsletterModal"><i
+                                class="bi bi-cart"></i></a>
+                        <a href="#" class="text-white mx-2 d-none d-md-inline"><i class="bi bi-person"></i></a>
+                        <a href="#" class="text-white mx-2 d-none d-md-inline"><i class="bi bi-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="mobileNav">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="border-radius: 0;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="shop-section d-flex align-items-center text-white">
+            <div class="overlay"></div>
+            <div class="container position-relative">
+                <div class="col text-center">
+                    <div class="col-md-12 text-md-end text-center">
+                        <nav>
+                            <ol class="breadcrumb mt-3 justify-content-center text-white-50">
+                                <li class="breadcrumb-item"><a href="index.html"
+                                        class="text-white-50 text-decoration-none">Home</a></li>
+                                <li class="breadcrumb-item active text-white-50">Shop</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <h1 class="fw-light mb-2">SHOP</h1>
+                        <p class="m-3">We believe that shopping Is more than a transaction; It's an experience, a
+                            journey, and a treasure hunt all rolled into one.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--product -->
+        <section class="container-fluid three-d-product d-flex justify-content-center align-items-center">
+            <div class="box">
+                <span style="--i: 1"><img src="img/product-01.jpg" alt=""></span>
+                <span style="--i: 2"><img src="img/product-02.jpg" alt=""></span>
+                <span style="--i: 3"><img src="img/product-03.jpg" alt=""></span>
+                <span style="--i: 4"><img src="img/product-04.jpg" alt=""></span>
+                <span style="--i: 5"><img src="img/product-06.jpg" alt=""></span>
+                <span style="--i: 6"><img src="img/product-09.jpg" alt=""></span>
+                <span style="--i: 7"><img src="img/product-10.jpg" alt=""></span>
+                <span style="--i: 8"><img src="img/product-12.jpg" alt=""></span>
+            </div>
+        </section>
+
+        <!-- cart product  -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-1.jpg" class="img-fluid" alt="Caramel Explosion">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Caramel Explosion</h5>
+                        <p class="product-price">$11.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-2.jpg" class="img-fluid" alt="Choco Cake">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Choco Cake</h5>
+                        <p class="product-price">$29.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-3.jpg" class="img-fluid" alt="Coconut Star">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Coconut Star</h5>
+                        <p class="product-price">$18.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-4.jpg" class="img-fluid" alt="Mimosa">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Mimosa</h5>
+                        <p class="product-price">$24.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-5.jpg" class="img-fluid" alt="Sweet Surprise">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Sweet Surprise</h5>
+                        <p class="product-price">$22.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-6.jpg" class="img-fluid" alt="Pink Cake">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Pink Cake</h5>
+                        <p class="product-price">$22.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-7.jpg" class="img-fluid" alt="Delightful Lemon">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Delightful Lemon</h5>
+                        <p class="product-price">$16.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="product-card">
+                        <div class="img-rapper">
+                            <img src="img/shop-img-8.jpg" class="img-fluid" alt="Choco Passion">
+                            <p class="hovr-text d-lg-block">Add To Cart</p>
+                        </div>
+                        <h5 class="product-title mt-3">Choco Passion</h5>
+                        <p class="product-price">$32.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <section class="experience-section position-relative text-white">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-start">
+                        <p class="text-uppercase text-white small fw-semibold">Strive for Perfection</p>
+                        <h2 class="display-5 text-white">Elevate Your <br>Experience</h2>
+                        <p class="lead text-white">
+                            Whether it's through our products, services, or solutions, we are dedicated to ensuring that
+                            every interaction with us is a step towards excellence.
+                        </p>
+                        <button class="btn btn-primary mt-2 px-4 py-2">Discover More</button>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="flip-card">
+                                    <div class="card text-center shadow-sm border-0 p-4 mb-4">
+                                        <h2 class="fw-semibold">+ 45</h2>
+                                        <h5 class="">New Projects</h5>
+                                        <p class="text-secondary small">Exceptional experiences, where every moment
+                                            counts</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="flip-card">
+                                    <div class="card text-center shadow-sm border-0 p-4 mt-4">
+                                        <h2 class="fw-semibold">+ 83</h2>
+                                        <h5 class="">Custom Services</h5>
+                                        <p class="text-secondary small">Elevate your remarkable experience together</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- new-Arrival -->
+        <section class="container-fluid new-arvl">
+            <div class="container my-5">
+                <h2 class="text-center mb-4 display-5">New Arrivals</h2>
+                <div id="cakeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ms-5">
+                        <div class="carousel-item active cakeslidernew">
+                            <div class="row">
+                                <div class=" col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--1.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--2.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--3.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item cakeslidernew">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--4.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--5.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--6.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item cakeslidernew">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--7.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--8.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--9.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item cakeslidernew">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--10.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--11.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--12.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item cakeslidernew">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--13.jpg" class="card-img-top" style="border-radius: 0;">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--14.jpg" class="card-img-top border-0">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="card border-0">
+                                        <img src="img/cake--15.jpg" class="card-img-top border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev cprev" type="button" data-bs-target="#cakeCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next cnext" type="button" data-bs-target="#cakeCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-timer -->
+        <div class="container-fluid mt-5 deal-section">
+            <div class="deal-overlay">
+                <div class="row text-center justify-content-center deal-content">
+                    <p class="deal-subtitle" style="color: #ffffff;">Nature Deal of the Day</p>
+                    <h2 class="deal-title" style="color: #ffffff;">Deal of the Day</h2>
+
+                    <div class="col-12">
+                        <div class="row justify-content-center d-flex flex-wrap g-3 mt-3 timer">
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="card p-2 timer-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #ffffff;">00</h5>
+                                        <p class="card-text" style="color: #ffffff;">Sec</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-shop px-4 py-2">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- reservation-section  -->
+        <section class="container-fluid reservation shop-reservation py-5">
+            <div class="container reservation-section mx-auto text-center">
+                <h2 class="mb-4 mt-4">Book Your Table</h2>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option selected>1 PERSON</option>
+                            <option>2 PEOPLE</option>
+                            <option>3 PEOPLE</option>
+                            <option>4 PEOPLE</option>
+                            <option>5 PEOPLE</option>
+                            <option>6 PEOPLE</option>
+                            <option>7 PEOPLE</option>
+                            <option>8 PEOPLE</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option selected>7:00 AM</option>
+                            <option>7:30 AM</option>
+                            <option>8:00 AM</option>
+                            <option>8:30 AM</option>
+                            <option>9:00 AM</option>
+                            <option>9:30 AM</option>
+                            <option>10:00 AM</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-reserve">BOOK A TABLE</button>
+                    </div>
+                </form>
+                <p class="mt-3 text-muted">Powered by OpenTable</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center foot-2 py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="mb-3">
+                <img src="img/h2-1-logo-img-2.png" style="height: 100px;">
+            </div>
+
+            <div class="row mt-4 p-2 so-me-ic">
+                <div class="col-12 d-flex foot-2-icn justify-content-center gap-1 gap-md-3">
+                    <a href="#" class="icon-box facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="icon-box instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="icon-box twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="icon-box youtube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="icon-box linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <p class="text-muted small">
+                &copy; 2019 QODE INTERACTIVE, ALL RIGHTS RESERVED &bull; SWEET JANE &bull; 75002 PARIS &bull; 11
+                BOULEVARD MONTMARTRE
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
